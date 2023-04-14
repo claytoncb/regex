@@ -9,9 +9,8 @@ const matchers = {
     mLComment: /^\/\*[\s\S]*?\*\/$/,
     notPythonPycharmPyc: /^(?!.*python|pycharm|pyc$)[A-Za-z.]+$/,
     limitedFloatingPoint: /^([0-9]|[1-9][0-9]*)(\.[0-9]{0,2})?$/,
-    palindrome2358: /^(?:(?=(.)\d\1)(?=(.)\d\2)(?=(.)\d\3)(?=(.)\d\4)[1-5]){5}$/,
-    noHyphenBeforeDigit: /^(?!.*-\d)[A-Za-z0-9-]+$/,
-    ww: /^([[a-Z]+]{2})?$/,
+    palindrome2358: /^(.)((.)|(.)(.)\4|(.)(.)(.)?\7\6|(.)(.)(.)(.)?\11\10\9)?\1$/,
+    noHyphenBeforeDigit: /(?<!-)[0-9]+/,
+    ww:/^(.*)\1{1,}$/,
 }
-
 export default matchers;
