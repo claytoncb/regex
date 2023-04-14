@@ -104,7 +104,7 @@ const FIXTURE = {
     bad: ["", "dog", "3.5e9098", "2e1896489736"],
   },
   palindrome2358: {
-    good: ["qq", "8u8", "π@M@π", "…§¢vv¢§…"],
+    good: ["qq","aabaabaa", "8u8", "π@M@π", "…§¢vv¢§…", "aaaaa"],
     bad: ["az", "abba", "8888", "122210"],
   },
   noHyphenBeforeDigit: {
